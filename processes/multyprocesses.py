@@ -8,7 +8,7 @@ while True:
 	pid = os.fork()
 	if pid==0:
 		time.sleep(3)
-	    print('I am child process (%s) and my parent is %s.' % (os.getpid(), os.getppid()))
+		print('I am child process (%s) and my parent is %s.' % (os.getpid(), os.getppid()))
 	else:
 		time.sleep(3)
-	    print('I (%s) just created a child process (%s).' % (os.getpid(), pid))
+		print('I (%s) just created a child process (%s).' % (os.getpid(), pid))
