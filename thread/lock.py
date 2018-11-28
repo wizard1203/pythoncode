@@ -7,9 +7,10 @@ def change_it(n):
     # save money before get it 
     balance = balance + n
     balance = balance - n
+    print(balance)
 
 def run_thread(n):
-    for i in range(100000):
+    for i in range(100):
         change_it(n)
 
 t1 = threading.Thread(target=run_thread, args=(5,))
