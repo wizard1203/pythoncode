@@ -7,6 +7,16 @@ def change_it(n):
     # save money before get it 
     balance = balance + n
     balance = balance - n
+    balance = balance + n
+    balance = balance - n
+    balance = balance + n
+    balance = balance - n
+    print(balance)
+    balance = balance + n
+    balance = balance - n
+    print(balance)
+    balance = balance + n
+    balance = balance - n
     print(balance)
 
 def run_thread(n):
