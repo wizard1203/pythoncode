@@ -25,7 +25,7 @@ def doubler(number, logger):
 
 if __name__ == '__main__':
     thread_names = ['Mike', 'George', 'Wanda', 'Dingbat', 'Nina']
-    logger = [get_logger(name) for name in threading_names]
+    logger = [get_logger(name) for name in thread_names]
     for i in range(5):
         my_thread = threading.Thread(
             target=doubler, name=thread_names[i], args=(i,logger[i]))
