@@ -16,7 +16,6 @@ def get_logger():
 
 def doubler(number, logger):
     """
-    可以被线程使用的一个函数
     """
     logger.debug('doubler function executing')
     result = number * 2
