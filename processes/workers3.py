@@ -15,7 +15,11 @@ def worker_3(interval):
     print ("worker_3")
     time.sleep(interval)
     print ("end worker_3")
-
+    
+def worker_4(interval):
+    print ("worker_")
+    print ("end worker_")
+    
 if __name__ == "__main__":
     p1 = multiprocessing.Process(target = worker_1, args = (2,))
     p2 = multiprocessing.Process(target = worker_2, args = (3,))
