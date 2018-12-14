@@ -13,8 +13,9 @@ def worker_2(interval):
 
 def worker_3(interval):
     print ("worker_3")
-    time.sleep(interval)
-    print ("end worker_3")
+    while True:
+        time.sleep(interval)
+        print ("end worker_3")
     
 def worker_4(interval):
     print ("worker_")
